@@ -163,6 +163,15 @@ body.dark-mode div.card-padded {
         size:auto;
         margin: 8% 8% 8% 8%;
     }
+    body{
+        background-color: var(--white);
+        color: var(--black);
+        margin: 4%;
+    }
+    body.dark-mode div.card, body.dark-mode div.card-padded {
+        background-color: var(--white);
+        color: var(--black);
+    }
 }
 
 
