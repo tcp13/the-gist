@@ -28,7 +28,7 @@ function populateNews(){
 
 
 /* DARK MODE */
-if(window.localStorage.getItem("darkMode") != null && window.localStorage.getItem("darkMode") == false){
+if(window.localStorage.getItem("darkMode") != null && window.localStorage.getItem("darkMode") == "false"){
     $("body").removeClass("dark-mode");
     $("#socialShare img").css("filter", "brightness(0.1)");
     $("#toggle-dark-mode").text("Dark Mode");
