@@ -253,3 +253,13 @@ body.dark-mode #toggle-dark-mode{
     font-size: 0.8rem;
     text-decoration: underline;
 }
+#no-list li{
+    display:inline;
+    margin-right:1rem;
+}
+#no-list{
+    text-align:center;
+    padding-left:0px;
+    font-size:0.8rem;
+    margin-top: 5rem;
+}
