@@ -21,7 +21,7 @@ function populateNews(){
             sources += `<a href='${url}' target='_blank'><span class="source tooltip">...<span class="tooltip-text">${url.host}</span></span></a>`;
         }
         
-        $("main").append(`<div class="card"><h2 class="date">${news[i].date}</h2>${sources}<p>${news[i].content}</p></div>`);
+        $("#news-feed").append(`<div class="card"><h2 class="date">${news[i].date}</h2>${sources}<p>${news[i].content}</p></div>`);
     }
 }
 
