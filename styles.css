@@ -35,6 +35,7 @@ h4 {font-size: 1.563rem;}
 h5 {font-size: 1.25rem;}
 h6 {font-size: 1rem;}
 p {margin-bottom: 1rem; font-size:1.25rem; margin-top:0.5rem;}
+ul{font-size:1.25rem;}
 .footer-text, .tooltip-text {font-size: 0.8rem;}
 a {color: var(--black);}
 body.dark-mode a {color: var(--white);}
