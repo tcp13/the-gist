@@ -18,7 +18,7 @@ function populateNews(){
     
         for(j=0; j<news[i].sources.length; j++){
             let url = new URL(news[i].sources[j]);
-            sources += `<a href='${url}' target='_blank'><span class="source tooltip">...<span class="tooltip-text">${url.host}</span></span></a>`;
+            sources += `<a href='${url}' target='_blank' aria-label='Source'><span class="source tooltip">...<span class="tooltip-text">${url.host}</span></span></a>`;
         }
         
         $("#news-feed").append(`<div class="card"><h2 class="date">${news[i].date}</h2>${sources}<p>${news[i].content}</p></div>`);
