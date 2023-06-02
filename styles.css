@@ -256,7 +256,9 @@ body.dark-mode #toggle-dark-mode{
 }
 #no-list li{
     display:inline;
-    margin-right:1rem;
+    margin-right:0.3rem;
+    margin-left:0.3rem;
+    white-space:nowrap;
 }
 #no-list{
     text-align:center;
