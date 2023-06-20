@@ -6,22 +6,27 @@ $.getJSON("news.json")
         populateNews();
     })
     .fail(function(){
-        console.log("Hmm, something went wrong. Unable to retrieve news.");
+        $("#news-feed").append("Hmm, something went wrong. Unable to retrieve news.");
     });
 
 
 
 
 function populateNews(){
-    for(i=0; i<10; i++){
-        let sources = "";
-    
-        for(j=0; j<news[i].sources.length; j++){
-            let url = new URL(news[i].sources[j]);
-            sources += `<a href='${url}' target='_blank' aria-label='Source'><span class="source tooltip">...<span class="tooltip-text">${url.host}</span></span></a>`;
-        }
+    try{
+        for(i=0; i<10; i++){
+            let sources = "";
         
-        $("#news-feed").append(`<div class="card"><h2 class="date">${news[i].date}</h2>${sources}<p>${news[i].content}</p></div>`);
+            for(j=0; j<news[i].sources.length; j++){
+                let url = new URL(news[i].sources[j]);
+                sources += `<a href='${url}' target='_blank' aria-label='Source'><span class="source tooltip">...<span class="tooltip-text">${url.host}</span></span></a>`;
+            }
+            
+            $("#news-feed").append(`<div class="card"><h2 class="date">${news[i].date}</h2>${sources}<p>${news[i].content}</p></div>`);
+        }
+    }
+    catch{
+        $("#news-feed").append("Hmm, something went wrong. Unable to retrieve news.");
     }
 }
 
