@@ -1,6 +1,7 @@
 var news = [];
+var scope = window.location.pathname.replace("/", "").replace(".html", "");
 
-$.getJSON("news.json")
+$.getJSON("news-" + scope + ".json")
     .done(function(data){
         news = data;
         populateNews();

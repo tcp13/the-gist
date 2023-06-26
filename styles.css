@@ -88,6 +88,11 @@ main{
     body{margin:4%;}
 }
 @media only screen and (max-width: 800px) {
+    #navigation{
+        float:none !important;
+        display:block !important;
+        margin:1rem 0px !important;
+    }
     div.card-padded {
         padding: 1rem 2rem !important;
     }
@@ -275,4 +280,21 @@ body.dark-mode #toggle-dark-mode{
     padding-left:0px;
     font-size:0.8rem;
     margin-top: 5rem;
+}
+
+
+#navigation{
+    float:right;
+    margin-top:3.5rem;
+}
+header h1{
+    display:inline-block;
+}
+#navigation img{
+    width: 2rem;
+    padding: 0px;
+    margin-left:0.55rem;
+}
+#navigation img:hover{
+    transform: scale(0.9);
 }

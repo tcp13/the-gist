@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- metadata -->
+		<title>The Gist. UK news for people who hate news.</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- seo -->
+        <!-- <meta name="robots" content="noindex"> -->
+		<meta name="title" content="The Gist.">
+		<meta name="description" content="News for people who hate news.">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://thegistnews.net/">
+		<meta property="og:title" content="The Gist.">
+		<meta property="og:description" content="News for people who hate news.">
+		<meta property="og:image" content="https://thegistnews.net/thumbnail.png">
+		<meta property="twitter:card" content="summary_large_image">
+		<meta property="twitter:url" content="https://thegistnews.net/">
+		<meta property="twitter:title" content="The Gist.">
+		<meta property="twitter:description" content="News for people who hate news.">
+		<meta property="twitter:image" content="https://thegistnews.net/thumbnail.png">
+
+		<!-- styles -->
+		<link rel="stylesheet" href="styles.css">
+
+		<!-- favicons -->
+		<link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+		<link rel="manifest" href="favicons/site.webmanifest">
+		
+		<!-- Google fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Roboto+Slab:wght@300;400;700&display=swap" rel="stylesheet">
+
+		<!-- jQuery -->
+		<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+	</head>
+	<body class="dark-mode">
+		<header>
+            <h1 class="large">The Gist.</h1>
+			<nav id="navigation">
+				<a href="/us.html"><img alt="US News" src="icons/us.png"></a>
+				<a href="/canada.html"><img alt="Canada News" src="icons/canada.png"></a>
+				<a href="/uk.html"><img alt="UK News" src="icons/uk.png"></a>
+				<a href="/world.html"><img alt="World News" src="icons/world.png"></a>
+			</nav>
+        </header>
+        <main id="news-feed"></main>
+        <footer>
+            <div class="col-2">
+                <div class="col">
+                    <p class="footer-text"><strong>The Gist v1.0</strong><br>Tyler Puckett © 2023<br><button onclick="toggleDarkMode();" id="toggle-dark-mode">Light Mode</button> | <a href="/terms.html">Terms of Use</a> | <a href="https://tyler-puckett.com/#page-section-627c16fe9e1aa7738a176d15" target="_blank">Feedback</a></p>
+                </div>
+                <div class="col">
+                    <div id="socialShare">
+                        <h2>Share The Gist:</h2>
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//thegistnews.net" target="_blank"><img alt="Facebook" src="icons/facebook-white.png"></a>
+                        <a href="https://twitter.com/intent/tweet?text=https%3A//thegistnews.net" target="_blank"><img alt="Twitter"  src="icons/twitter-white.png"></a>
+                        <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A//thegistnews.net" target="_blank"><img alt="LinkedIn" src="icons/linkedin-white.png"></a>
+                    </div>
+                </div>
+            </div>
+
+			<ul id="no-list">
+				<li>No Ads.</li>
+				<li>No Popups.</li>
+				<li>No Paywalls.</li>
+				<li>No Opinions.</li>
+				<li>No Speculation.</li>
+				<li>No Breaking News.</li>
+				<li>No Infinte Scrolling.</li>
+			</ul>
+            
+            <!-- scripts -->
+            <script src="script.js"></script>
+            <script src="analytics.js"></script>
+        </footer>
+    </body>
+</html>
