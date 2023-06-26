@@ -15,7 +15,7 @@ $.getJSON("news-" + scope + ".json")
 
 function populateNews(){
     try{
-        for(i=0; i<10; i++){
+        for(i=0; i<5; i++){
             let sources = "";
         
             if(news[i].sources[0] != null){
